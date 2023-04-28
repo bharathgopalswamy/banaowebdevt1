@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BanaoWebdevtask1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a362fb6388.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- =======================Navbar====================== -->
+    <nav class="flex">
+      <div class="nav-left flex">
+        <h2>
+          <a href="#"><span class="highlight">ATG.</span>WORLD</a>
+        </h2>
+      </div>
+
+      <div class="nav-middle flex d-none">
+        <div class="searchBox flex">
+          <i class="fas fa-magnifying-glass"></i>
+          <input
+            type="text"
+            placeholder="Search for yout favorite groups in ATG"
+          />
+        </div>
+      </div>
+
+      <div class="nav-right flex">
+        <a class="create-para" href="#"
+          >create account.
+          <span class="free" onclick="CreateAcc()">It's free!</span></a
+        >
+        <p class="d-none"><i class="fa-sharp fa-solid fa-caret-down"></i></p>
+        <div class="humberger" id="menubar">
+          <i class="fas fa-square"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =====================Login form ===================== -->
+
+    <div class="loginform" id="loginform">
+      <span class="cross" id="cross" onclick="goBack()">&times;</span>
+      <p class="login-para">
+        Let's learn, share & inspire each other with our passion for computer
+        engineering. Sign up now 🤘
+      </p>
+      <div class="acc-heading">
+        <h2>Create Account</h2>
+        <p>
+          Already have an account?
+          <span><a class="sign-color" href="#">Sign In</a></span>
+        </p>
+      </div>
+      <div class="form-content">
+        <div class="form">
+          <form action="">
+            <div class="flex">
+              <input class="input" type="text" placeholder="First Name" />
+              <input class="input" type="text" placeholder="last Name" />
+            </div>
+            <div>
+              <input class="input type" type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input
+                class="input type"
+                type="password"
+                placeholder="password"
+              />
+            </div>
+            <div>
+              <input
+                class="input type"
+                type="password"
+                placeholder="confirm-password"
+              />
+            </div>
+            <button class="login-btn">Create Account</button>
+            <button class="login-btn create">Sign Up with facebook</button>
+            <button class="login-btn create">Sign Up with Google</button>
+          </form>
+        </div>
+
+        <div class="login-sidebar">
+          <img src="https://source.unsplash.com/1100x900/?cartoon" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================Banner========================== -->
+
+    <section>
+      <div class="banner">
+        <div class="content">
+          <h3>Computer Engineering</h3>
+          <p>142,765 Computer Engineers follow this</p>
+          <div class="join">
+            <p onclick="CreateAcc ()">Join Group</p>
+          </div>
+          <div class="left-arrow">
+            <p><i class="fa-solid fa-arrow-left"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article">
+      <div class="links flex d-none">
+        <div class="ul">
+          <ul class="flex">
+            <li><p>All Posts(32)</p></li>
+            <li><p>Article</p></li>
+            <li><p>Event</p></li>
+            <li><p>Education</p></li>
+            <li><p>Job</p></li>
+          </ul>
+        </div>
+
+        <div class="post-group flex">
+          <p class="post-btn">
+            Write a Post
+            <span> <i class="fa-sharp fa-solid fa-caret-down"></i></span>
+          </p>
+          <p class="post-btn join">Join Group</p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="main-container">
+        <div class="container">
+          <div class="left-sidebar">
+            <img src="https://source.unsplash.com/1100x800/?mountain" alt="" />
+            <div class="post">
+              <p class="post-count">Post(368)</p>
+              <p class="filter">
+                Filter: All
+                <span><i class="fa-sharp fa-solid fa-caret-down"></i></span>
+              </p>
+            </div>
+            <div class="details">
+              <p>✍️ Article</p>
+              <div class="flex-div">
+                <h2 class="article-heading">
+                  What if famous brands had regular font? Meet RegulaBrands!
+                </h2>
+                <p class="dot-border"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <p class="article-para">
+                I've worked in UX for the better part of a decade. From now on,
+                I plan to rei...
+              </p>
+              <div class="user-details flex">
+                <div class="user-content flex">
+                  <img
+                    src="https://source.unsplash.com/1100x800/?student"
+                    alt=""
+                  />
+                  <h3 class="user-name">Sarthak Kamra</h3>
+                </div>
+                <div class="views flex">
+                  <div class="views-icon flex">
+                    <p class="d-none"><i class="fas fa-eye"></i></p>
+                    <p>1.4k views</p>
+                  </div>
+                  <p class="share-icon"><i class="fas fa-share"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-sidebar">
+            <img src="https://source.unsplash.com/1100x800/?education" alt="" />
+            <div class="details">
+              <p>✍️ Education</p>
+              <div class="flex-div">
+                <h2 class="article-heading">
+                  Tax Benifits for Investment under National Pension Scheme
+                  launched by Governnment
+                </h2>
+                <p class="dot-border"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+              <p class="article-para">
+                I've worked in UX for the better part of a decade. From now on,
+                I plan to rei...
+              </p>
+              <div class="user-details flex">
+                <div class="user-content flex">
+                  <img
+                    src="https://source.unsplash.com/1100x800/?student"
+                    alt=""
+                  />
+                  <h3 class="user-name">Sarah West</h3>
+                </div>
+                <div class="views flex">
+                  <div class="views-icon flex">
+                    <p class="d-none"><i class="fas fa-eye"></i></p>
+                    <p>1.4k views</p>
+                  </div>
+                  <p class="share-icon"><i class="fas fa-share"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-sidebar">
+            <img src="https://source.unsplash.com/1100x800/?car" alt="" />
+            <div class="details">
+              <p>📆 Meetup</p>
+              <div class="flex-div">
+                <h2 class="article-heading">
+                  Finance & Investment Eliste Social Mixer @Lujiazui
+                </h2>
+                <p class="dot-border" onclick="showOption()">
+                  <i  class="fa-solid fa-ellipsis"></i>
+                </p>
+                <div class="option" id="option">
+                  <p>Edit</p>
+                  <p>Report</p>
+                  <p>Option 3</p>
+                </div>
+              </div>
+
+              <div class="date-location flex">
+                <p class="date">📆 Fri, 12 Oct, 2018</p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i
+                  ><span>Ahmedabad, India</span>
+                </p>
+              </div>
+              <button class="visit-btn">Visit Website</button>
+              <div class="user-details flex">
+                <div class="user-content flex">
+                  <img
+                    src="https://source.unsplash.com/1100x800/?student"
+                    alt=""
+                  />
+                  <h3 class="user-name">Ronal Jones</h3>
+                </div>
+                <div class="views flex">
+                  <div class="views-icon flex">
+                    <p class="d-none"><i class="fas fa-eye"></i></p>
+                    <p>1.4k views</p>
+                  </div>
+                  <p class="share-icon"><i class="fas fa-share"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-sidebar">
+            <div class="details">
+              <p>👜 Job</p>
+              <div class="flex-div">
+                <h2 class="article-heading">
+                  Software Developer -II What if famous brands had regular font?
+                  Meet RegulaBrands!
+                </h2>
+                <p class="dot-border"><i class="fa-solid fa-ellipsis"></i></p>
+              </div>
+
+              <div class="profile-location flex">
+                <p class="date">👜 Fri, 12 Oct, 2018</p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i
+                  ><span>Noida, India</span>
+                </p>
+              </div>
+              <button class="visit-btn color">Apply on TimesJob</button>
+              <div class="user-details flex">
+                <div class="user-content flex">
+                  <img
+                    src="https://source.unsplash.com/1100x800/?student"
+                    alt=""
+                  />
+                  <h3 class="user-name">Joseph Gray</h3>
+                </div>
+                <div class="views flex">
+                  <div class="views-icon flex">
+                    <p class="d-none"><i class="fas fa-eye"></i></p>
+                    <p>1.4k views</p>
+                  </div>
+
+                  <p class="share-icon"><i class="fas fa-share"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-sidebar">
+          <div class="location flex">
+            <p>
+              <i class="fa-solid fa-location-dot"></i><span>Noida, India</span>
+            </p>
+            <p class="pen-icon"><i class="fa-sharp fa-solid fa-pen"></i></p>
+          </div>
+          <hr />
+          <div class="location-details">
+            <p>
+              <i class="fa-regular fa-circle-question"></i>Your location will
+              help us serve better and extend a personalised experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
